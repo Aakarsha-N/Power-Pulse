@@ -1,3 +1,6 @@
+![PowerShell](https://img.shields.io/badge/PowerShell-5.1+-blue)
+![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
+![License](https://img.shields.io/badge/License-MIT-green)
 # Power-Pulse
 Your battery was lying to you. Not anymore. ⚡Continuous monitoring. Smart alerts. Zero mercy for unexpected drops. 
 
