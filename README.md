@@ -1,12 +1,16 @@
 ![PowerShell](https://img.shields.io/badge/PowerShell-5.1+-blue)
 ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
 ![License](https://img.shields.io/badge/License-MIT-green)
-# Power-Pulse
+
+**# Power-Pulse**
 Your battery was lying to you. Not anymore. ⚡Continuous monitoring. Smart alerts. Zero mercy for unexpected drops. 
 
 
 PowerPulse is a lightweight PowerShell-based battery-monitoring tool that tracks battery performance, detects charging/discharging behavior, and logs system power activity over time. It can run silently in the background using Windows Task Scheduler.  
 
+## 💼 Project Purpose
+
+PowerPulse is a system-level monitoring tool built using PowerShell to analyze battery behavior in real time. It demonstrates automation, system scheduling, and performance tracking on Windows systems.
 
 ## 📌 Features
 
@@ -30,7 +34,7 @@ It calculates:
 
 If abnormal behavior is detected (fast drain or fast charge), it records alerts in the log file.
 
----
+
 
 ## 📁 Project Structure
 Power-Pulse/
@@ -39,6 +43,7 @@ Power-Pulse/
 ├── PowerPulseStart.ps1        # Installs scheduled task (run as admin)
 ├── PowerPulseStop.ps1         # Removes scheduled task (run as admin)
 └── PPlog.txt # Log file          (auto-generated every 10 min )
+---
 
 **Technical Summary**
 Uses Get-CimInstance Win32_Battery
@@ -47,6 +52,7 @@ Uses Windows Task Scheduler for persistence
 Executes PowerShell in hidden mode
 Computes battery rate using time difference logic
 
+---
 ⚠️ Notes
 Designed for laptop systems (battery-dependent devices)
 Desktop systems may log "No battery detected."
